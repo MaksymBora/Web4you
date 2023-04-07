@@ -5,33 +5,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 517px;
-  height: 631px;
   background-color: var(--body-bg-color);
-  padding: 40px;
   border-radius: 15px;
 }
 
 .modal-leave-review-close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   border: none;
-  padding: 7px;
 }
 
 .modal-leave-review-text {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
   letter-spacing: -0.03em;
-  width: 298px;
   margin-right: 0;
-  margin-bottom: 40px;
 }
 
 .modal-leave-review-text-accent {
@@ -45,15 +35,11 @@
 
 .modal-leave-review-input {
   width: 100%;
-  height: 66px;
-  font-size: 18px;
   font-weight: 400;
-  line-height: 1.22;
   letter-spacing: -0.02em;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   box-shadow: 0px 5.44px 5.44px rgba(0, 0, 0, 0.03);
-  padding: 22px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -63,23 +49,15 @@
   border-color: var(--main-accent-color);
 }
 
-.modal-leave-review-form-filed {
-  margin-bottom: 19px;
-}
-
 .modal-leave-review-form-message {
   display: block;
   width: 100%;
-  height: 137px;
-  font-size: 18px;
   font-weight: 500;
-  line-height: 1.22;
   letter-spacing: -0.02em;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   box-shadow: 0px 5.44px 5.44px rgba(0, 0, 0, 0.03);
   resize: none;
-  padding: 22px 24px;
   margin-bottom: 18px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -108,14 +86,8 @@
 
 .modal-leave-review-input::placeholder,
 .modal-leave-review-form-message::placeholder {
-  font-size: 18px;
-  line-height: 1.22;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
-}
-
-.leave-review-input-tel {
-  padding: 22px 22px 22px 177px;
 }
 
 .modal-leave-review-input-wrapper {
@@ -126,18 +98,14 @@
 .leave-review-input-tel-icon {
   position: absolute;
   top: 50%;
-  left: 24px;
   transform: translate(0, -50%);
 }
 
 .leave-review-input-tel-text {
   position: absolute;
   top: 50%;
-  left: 74px;
   transform: translate(0, -50%);
-  font-size: 18px;
   font-weight: 500;
-  line-height: 1.22;
   letter-spacing: -0.02em;
 }
 
@@ -146,8 +114,115 @@
   display: inline-block;
   position: absolute;
   top: -5px;
-  right: -20px;
   width: 1px;
-  height: 32px;
   background-color: rgba(64, 64, 64, 0.3);
+}
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  .modal-leave-review {
+    width: 311px;
+    height: 471px;
+    padding: 32px 32px 32px 24px;
+  }
+  .modal-leave-review-text {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 255px;
+    margin-bottom: 32px;
+  }
+  .modal-leave-review-close-btn {
+    top: 14px;
+    right: 14px;
+    padding: 0;
+  }
+  .modal-leave-review-input {
+    height: 45px;
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 14px 14px 14px 18px;
+  }
+  .modal-leave-review-form-filed {
+    margin-bottom: 14px;
+  }
+  .modal-leave-review-form-message {
+    height: 91px;
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 14px 18px;
+  }
+  .modal-leave-review-input::placeholder,
+  .modal-leave-review-form-message::placeholder {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .leave-review-input-tel {
+    padding: 13px 13px 13px 106px;
+  }
+  .leave-review-input-tel-icon {
+    left: 18px;
+  }
+  .leave-review-input-tel-text {
+    left: 58px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .leave-review-input-tel-text::after {
+    right: -8px;
+    height: 25px;
+  }
+}
+/* Tablet + Desktop */
+@media screen and (min-width: 768px) {
+  .modal-leave-review {
+    width: 517px;
+    height: 631px;
+    padding: 40px;
+  }
+  .modal-leave-review-close-btn {
+    top: 24px;
+    right: 24px;
+    padding: 7px;
+  }
+  .modal-leave-review-text {
+    font-size: 24px;
+    line-height: 1.16;
+    width: 298px;
+    margin-bottom: 40px;
+  }
+  .modal-leave-review-input {
+    height: 66px;
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 22px;
+  }
+  .modal-leave-review-form-filed {
+    margin-bottom: 19px;
+  }
+  .modal-leave-review-form-message {
+    height: 137px;
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 22px 24px;
+  }
+  .modal-leave-review-input::placeholder,
+  .modal-leave-review-form-message::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .leave-review-input-tel {
+    padding: 22px 22px 22px 177px;
+  }
+  .leave-review-input-tel-icon {
+    left: 24px;
+  }
+  .leave-review-input-tel-text {
+    left: 74px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .leave-review-input-tel-text::after {
+    right: -20px;
+    height: 32px;
+  }
 }
