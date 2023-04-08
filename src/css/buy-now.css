@@ -2,18 +2,19 @@
 
 .buy-now {
     /* position: relative; */
-    background: #FAFAFA;
-    
+    background: var(--body-bg-color);
+
     padding: 32px 24px;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 15px;
     min-width: 311px;
     min-height: 471px;
     background-color: var(--body-bg-color);
+    overflow-y: scroll;
 }
 
 .buy-close-btn {
@@ -28,7 +29,7 @@
     top: 14px;
     right: 14px;
 
-    
+
 }
 
 .buy-close-btn-icon {
@@ -66,6 +67,16 @@
     gap: 8px;
     margin-bottom: 32px;
 
+
+}
+
+.buy-imput-name {
+    margin-bottom: 18px;
+
+}
+
+.buy-form-input:first-child {
+    margin-bottom: 14px;
 }
 
 .buy-input-wrapper {
@@ -81,6 +92,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 
 .buy-list-btn {
@@ -251,39 +264,47 @@
         line-height: 1.17;
     }
 
-    .buy-list{
+    .buy-list {
         display: flex;
         flex-wrap: nowrap;
         gap: 16px;
-        
+
     }
 
-    .buy-item{
+    .buy-item {
         display: block;
         max-width: 160px;
         padding: 24px 20px 18px;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .buy-now{
+
+    .buy-now {
         min-width: 517px;
         min-height: 631px;
+        padding: 48px;
+        border-radius: 15px;
+
+        background-color: var(--body-bg-color);
     }
 
-    .buy-list-btn{
+    .buy-list-btn {
         display: block;
         margin-top: 14px;
         margin-right: auto;
         margin-left: auto;
-        
+
     }
 
-   
 
-    .buy-imput-name{
+
+    .buy-imput-name {
         display: flex;
         gap: 18px;
+
     }
-    
+
+    .name {
+        flex-basis: calc(100% / 2);
+    }
 }

@@ -11,56 +11,43 @@
 
         <ul class="buy-list">
             <li class="buy-item">
-                <picture>
-                    <source media="(min-width: 768px)"
-                    srcset="/img/desktop/order/100g1x.png 1x,
-                    /img/desktop/order/100g2x.png,
-                     /img/desktop/order/100g3x.png 3x">
-                     <source media="(min-width: 320px)" 
-                     srcset="">
-                    <img src="/img/desktop/order/100g1x.png" alt="chocolate-nuts" />
-                </picture>
+                
+                    <img srcset="img/desktop/order/100g2x.png 2x, img/desktop/order/100g3x.png 3x"
+                     src="/img/desktop/order/100g1x.png" alt="chocolate-nuts" />
+                
                 <button class="buy-list-btn">100 g</button>
             </li>
             <li class="buy-item">
-                <picture>
-                    <source media="(min-width: 768px)"
-                    srcset="/img/desktop/order/200g1x.png 1x,
-                    /img/desktop/order/200g2x.png 2x,
-                     /img/desktop/order/200g3x.png 3x">
-                     <source media="(min-width: 320px)" 
-                     srcset="">
-                     <img src="/img/desktop/order/200g1x.png" alt="bonbon-milk" />
-                </picture>
-                
+              
+                    <img srcset="/img/desktop/order/200g2x.png 2x, /img/desktop/order/200g3x.png 3x"
+                    src="/img/desktop/order/200g1x.png" alt="bonbon-milk" />
+            
                 <button class="buy-list-btn">200 g</button>
             </li>
             <li class="buy-item">
-                <picture>
-                    <source media="(min-width: 768px)"
-                    srcset="/img/desktop/order/300g1x.png 1x,
-                    /img/desktop/order/300g2x.png 2x,
-                     /img/desktop/order/300g3x.png 3x">
-                     <source media="(min-width: 320px)" 
-                     srcset="">
-                     <img src="/img/desktop/order/300g1x.png" alt="dark-chocolate" />
-                </picture>
+
+                    <img srcset="/img/desktop/order/300g2x.png 2x, /img/desktop/order/300g3x.png 3x"
+                     src="/img/desktop/order/300g1x.png" alt="dark-chocolate" />
                 
+
                 <button class="buy-list-btn">300 g</button>
             </li>
         </ul>
 
         <form class="buy-form">
             <span class="buy-form-descr">Personal information</span>
-            <label class="buy-form-field">
-                <div class="buy-imput-name">
-                <input class="buy-form-input" type="text" name="user_name" required pattern="^[a-zA-Zа-яА-Я]+$"
-                    minlength="3" placeholder="Name" />
+            <div class="buy-imput-name">
+                <label class="buy-form-field name">
 
-                <input class="buy-form-input" type="text" name="user_surname" required pattern="^[a-zA-Zа-яА-Я]+$"
-                    minlength="3" placeholder="Surname" />
-                </div>
-            </label>
+                    <input class="buy-form-input" type="text" name="user_name" required pattern="^[a-zA-Zа-яА-Я]+$"
+                        minlength="3" placeholder="Name" />
+                </label>
+                <label class="buy-form-field name">
+                    <input class="buy-form-input" type="text" name="user_surname" required pattern="^[a-zA-Zа-яА-Я]+$"
+                        minlength="3" placeholder="Surname" />
+
+                </label>
+            </div>
 
             <span class="buy-form-descr">Email</span>
             <label class="buy-form-field">
