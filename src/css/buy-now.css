@@ -307,4 +307,15 @@
     .name {
         flex-basis: calc(100% / 2);
     }
+
+    .buy-close-btn-icon{
+        width: 28px;
+        height: 28px;
+    }
+
+    .buy-submit-btn{
+        padding: 14px 40px;
+        width: 133px;
+        height: 45px;
+    }
 }
