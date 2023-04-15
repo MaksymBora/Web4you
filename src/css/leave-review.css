@@ -34,7 +34,7 @@
   border-radius: 5px;
 }
 
-@media screen and (min-height: 610px) {
+@media screen and (min-height: 707px) {
   .modal-leave-review {
     overflow-y: hidden;
   }
